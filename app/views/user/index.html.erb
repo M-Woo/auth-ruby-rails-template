@@ -1,0 +1,10 @@
+<h1>Enter your info</h1>
+<%= bootstrap_form_for :user do |form| %>
+	<%= form.text_field :name %>
+	<br>
+	<%= form.text_area :email %>
+	<br>
+	<%= form.text_field :password %>
+	<br>
+	<%= form.submit %>
+<%end%>

@@ -1,0 +1,12 @@
+<nav class="navbar navbar-default">
+	<ul class="nav navbar-nav navbar">
+	  <% if @current_user%>
+	  <li class="navbar-right"><a href="/user/<%=@current_user.id%>" style="color: black">Profile</a></li>
+	  <li class="navbar-right"><a href="/logout" style="color: black">Logout</a></li>
+	  <%end%>
+	  <% if !@current_user%>
+	  <li class="navbar-right"><a href="/login" style="color: black">Login</a></li>
+	  <li class="navbar-right"><a href="/user" style="color: black">Signup</a></li>
+	  <%end%>
+	</ul>
+</nav>
